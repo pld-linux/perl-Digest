@@ -29,7 +29,7 @@ ogólnego dla wszystkich modu³ów Digest::.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
