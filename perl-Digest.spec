@@ -27,7 +27,7 @@ ogólnego dla wszystkich modu³ów Digest::.
 %setup -q -n %{pdir}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
