@@ -3,7 +3,7 @@
 Summary:	Digest Perl module
 Summary(pl):	Modu³ perla Digest
 Name:		perl-Digest
-Version:	1.00
+Version:	1.01
 Release:	1
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
