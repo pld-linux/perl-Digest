@@ -4,12 +4,13 @@
 
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Digest
-Summary:	Digest Perl module
-Summary(pl):	Modu³ perla Digest
+Summary:	Digest - Perl modules that calculate message digests
+Summary(pl):	Digest - modu³y do obliczania skrótów komunikatów
 Name:		perl-Digest
 Version:	1.06
 Release:	1
-License:	GPL or Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
 # Source0-md5:	838445005b36286f385d8972af835f92
