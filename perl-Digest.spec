@@ -1,15 +1,19 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Digest
 Summary:	Digest Perl module
 Summary(pl):	Modu³ perla Digest
 Name:		perl-Digest
-Version:	1.02
-Release:	2
-License:	Artistic or GPL
+Version:	1.05
+Release:	1
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
-# Source0-md5:	5dfc701274490db4219e6e7190b24217
-BuildRequires:	perl-devel >= 5.6
+# Source0-md5:	e5cc52c6268182719423573ff68f08b0
+BuildRequires:	perl-devel >= 5.8
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -31,6 +35,7 @@ ogólnego dla wszystkich modu³ów Digest::.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+%{?with_tests: %{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -45,4 +50,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %{perl_vendorlib}/Digest.pm
+%{perl_vendorlib}/Digest/*
 %{_mandir}/man3/*
