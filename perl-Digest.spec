@@ -7,12 +7,12 @@
 Summary:	Digest Perl module
 Summary(pl):	Modu³ perla Digest
 Name:		perl-Digest
-Version:	1.05
+Version:	1.06
 Release:	1
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
-# Source0-md5:	e5cc52c6268182719423573ff68f08b0
+# Source0-md5:	838445005b36286f385d8972af835f92
 BuildRequires:	perl-devel >= 5.8
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
