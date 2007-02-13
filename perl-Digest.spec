@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Digest
 Summary:	Digest - Perl modules that calculate message digests
-Summary(pl.UTF-8):   Digest - moduły do obliczania skrótów komunikatów
+Summary(pl.UTF-8):	Digest - moduły do obliczania skrótów komunikatów
 Name:		perl-Digest
 Version:	1.15
 Release:	1
