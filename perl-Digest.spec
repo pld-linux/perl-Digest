@@ -7,13 +7,13 @@
 Summary:	Digest - Perl modules that calculate message digests
 Summary(pl.UTF-8):	Digest - moduły do obliczania skrótów komunikatów
 Name:		perl-Digest
-Version:	1.16
+Version:	1.17
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
-# Source0-md5:	df65b3c12785ff9bbf14521551f0268d
+# Source0-md5:	2f8a38f7f6c1bd2df36feb16d8208d6d
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
