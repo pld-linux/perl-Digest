@@ -3,7 +3,6 @@
 %bcond_without	tests	# do not perform "make test"
 
 %define		pdir	Digest
-%include	/usr/lib/rpm/macros.perl
 Summary:	Digest - Perl modules that calculate message digests
 Summary(pl.UTF-8):	Digest - moduły do obliczania skrótów komunikatów
 Name:		perl-Digest
